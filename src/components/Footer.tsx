@@ -35,35 +35,73 @@ const Footer = () => {
         <Image src="/Line.png" width={1596} height={0} alt="line" />
       </div>
 
-      <div className="min-[320px]:text-center gap-2 lg:flex justify-center py-5 text-[#FFFFFF]">
-        <Image src="/Icon.png" width={20} height={20} alt="email" />
-        <span>hello@skillbirdge.com</span>
-        <Image src="/Icon (1).png" width={20} height={20} alt="email" />
-        <span>+91 91813 24309</span>
-        <Image src="/Icon (2).png" width={20} height={20} alt="email" />
-        <span>Somewhere in the World</span>
-      </div>
+      <div className="min-[320px]:flex flex-col justify-center items-center">
+          <div className="large:flex extraL:flex space-x-4 ">
+            <div className="min-[320px]:flex space-x-3">
+              <div className="min-[320px]:flex space-x-1 small:w-1/2">
+                <Image src="/Icon.png" width={20} height={20} alt="" className="" />
+                <h1 className="small:overflow-auto text-[14px] text-[#FFFFFF] large:text-[18px] extraL:text-[18px]">
+                  hello@skillbirdge.com
+                </h1>
+              </div>
+
+              <div className="flex space-x-1 small:w-1/2 ">
+                <Image src="/Icon (1).png" width={20} height={20} alt=""  />
+                <h1 className="small:overflow-auto text-[14px] text-[#FFFFFF] large:text-[18px] extraL:text-[18px]">
+                  +919181323235
+                </h1>
+              </div>
+            </div>
+
+            <div className="small:mt-[15px] medium:mt-[15px]">    
+            <div className="flex space-x-1  justify-center text-[#FFFFFF] items-center ">
+              <Image src="/Icon (2).png" width={20} height={20} alt="" />
+              <h1 className="text-[14px] large:text-[18px] extraL:text-[18px]">
+                Somewhere in the World
+              </h1>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
 
       <div className="py-5">
         <Image src="/Line.png" width={1596} height={0} alt="line" />
       </div>
 
-      <div className="pt-5 pb-6 border border-[#262626] rounded-full mb-12 pl-10 pr-10 flex justify-between items-center bg-[#1A1A1A] ">
-        <div className="sm:mt[-2px] flex pt-3 gap-8 text-[#CAFF33] text-2xl">
-          <FaFacebook />
-          <FaTwitter />
-          <FaLinkedin />
-        </div>
-        <ul className="md:flex flex-row  gap-10 items-center font-light text-[16px] text-white">
-          <li>YourBank All Right Reserved</li>
-        </ul>
-        <ul className="md:flex flex-row  gap-5 items-center font-light text-[16px] text-white">
-          <li>Privacy Policy | Terms of Service</li>
-        </ul>
-      </div>
-    </div>
-  </>
-  )
-}
+      {/* third section */}
+      <div className="min-[320px]:border-[1px] border-[rgb(38,38,38)] bg-[rgb(26,26,26)] rounded-[12px]  
+      pt-[50px] px-[24px]  pb-[30px]">
 
-export default Footer
+    <div className="min-[320px] px-4">
+
+  <div className="min-[320px]:flex justify-center space-x-[8px]">
+    <Image src="/Button.png"     alt="" width={44} height={44} />
+    <Image src="/Button (1).png" alt="" width={44} height={44} />
+    <Image src="/Button (2).png" alt="" width={44} height={44} />
+  </div>
+
+    <div>
+    <div className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
+    <h1 className="text-[rgb(173,179,179)] text-[14px] justify-center">
+      YourBank All Rights Reserved
+    </h1>
+    </div>
+
+    <div className="pt-[30px] small:pt-[10px] medium:pt-[10px]">
+    <h1 className="text-[rgb(173,179,179)] text-[14px] justify-center">
+      Privacy Policy | Terms of Service
+    </h1>
+    </div>
+</div>
+</div>
+</div>
+</div>
+  </>
+
+
+  );
+};
+
+export default Footer;
